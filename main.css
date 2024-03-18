@@ -1,0 +1,163 @@
+:root{
+    --primary-light-color: #fafafa;
+    --light-grey: #aaaaaa;
+    --primary-color: hsl(210,82%,53%);
+    ---vault---primary---box-shadow: rgba(0,0,0,0.3);
+    --dark---hover---: #fdfdfd;
+}
+
+::backdrop{
+    --overlay-background-color: rgba(0, 0, 0, 0.4);
+}
+
+.---webkit-notebook{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content:flex-start;
+    align-items: stretch;
+}
+
+.---webkit-notebook-sub-element{
+    width: fit-content;
+    padding: 3px 6px;
+    height: fit-content;
+    margin: 0px;
+}
+
+.---progress--bar--container---{
+    width: 300px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: var(--light-grey);
+    position: relative;
+}
+
+.---progress---bar---{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 6px;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    transition: all 0.5s ease;
+}
+
+.---dialog---box---{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    width: 300px;
+    border-radius: 6px;
+    border: none;
+    background-color: #4f4f4f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 1px 3px 20px 1px var(---vault---primary---box-shadow);
+    color: #fafafa;
+    font-size: 18px;
+}
+
+.---dialog---close---btn---{
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background: var(--primary-color);
+    color: #fafafa;
+    font-size: 17px;
+}
+
+dialog::backdrop{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.---vault---list---option---btn---{
+    font-size: 20px;
+    width: fit-content;
+}
+
+.---vault---list---option---container---{
+    display: flex;
+    flex-direction: column;
+    min-width: 6px;
+    width: fit-content;
+    max-width: min-content;
+    box-shadow: 1px 3px 7px 1px var(---vault---primary---box-shadow);
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.---vault---list---option---button---{
+    min-width: 150px;
+    border: none;
+    min-height: 20px;
+}
+
+.---vault---list---option---button---:hover{
+    background: var(--dark---hover---);
+}
+
+.---vault---bottom---list---option{
+    display: flex;
+    flex-direction: column-reverse;
+    width: min-content;
+}
+
+.---vault---bottom---list---option{
+    display: flex;
+    flex-direction: column-reverse;
+    width: min-content;
+}
+
+.---vault---right---list---option{
+    display: flex;
+    flex-direction: row-reverse;
+    width: min-content;
+}
+
+.---vault---center---right---list---option{
+    display: flex;
+    flex-direction: row-reverse;
+    width: min-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.---vault---bottom---right---list---option{
+    display: flex;
+    flex-direction: row-reverse;
+    width: min-content;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.---vault---left---list---option{
+    display: flex;
+    flex-direction: row;
+    width: min-content;
+}
+
+.---vault---center---left---list---option{
+    display: flex;
+    flex-direction: row;
+    width: min-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.---vault---bottom---left---list---option{
+    display: flex;
+    flex-direction: row;
+    width: min-content;
+    align-items: flex-end;
+    justify-content: center;
+}
